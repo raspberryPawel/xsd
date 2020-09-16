@@ -21,7 +21,7 @@
     <xs:attribute name="href" type="xlink:hrefType"/>
     <xs:simpleType name="hrefType">
         <xs:restriction base="xs:anyURI">
-            <xs:pattern value='^(((http:|https:|#)).*)|^(((http:|https:|#|(data:image\/[^;]+;base64[^`]+))).*)'/>
+            <xs:pattern value='/^(((http:|https:|#)).*)|^(((http:|https:|#|(data:image\/[^;]+;base64[^`]+))).*)$/'/>
         </xs:restriction>
     </xs:simpleType>
     <xs:attribute name="role" type="xlink:roleType"/>
